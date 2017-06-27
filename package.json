@@ -9,7 +9,7 @@
     "test": "grunt test"
   },
   "main": "./dist/ovh-angular-tail-logs.min.js",
-  "repository": "ovh-ux/ovh-angular-tail-logs.git",
+  "repository": "ovh-ux/ovh-angular-tail-logs",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
