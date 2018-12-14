@@ -1,9 +1,3 @@
-.DS_Store
 node_modules
-.tmp
-.idea
-npm-debug.log
-bower_components
-.work
-src/*/translations/Messages_*_*.json
+dist
 tools
