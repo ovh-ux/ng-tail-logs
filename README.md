@@ -15,20 +15,17 @@ yarn add @ovh-ux/ng-tail-logs
 ## Usage
 
 ```js
-import 'angular';
+import angular from 'angular';
 import '@ovh-ux/ng-tail-logs';
 
 angular
-    .module("myapp", ["ngTailLogs"])
-    .controller("myCtrl", ($q, OvhTailLogs) => {
-        this.logger = new OvhTailLogs({
-            source: () => {
-                return $q.when("http://my-log-url");
-            },
-            delay: 2000,
-        });
-
+  .module('myApp', ['ngTailLogs'])
+  .controller('myCtrl', /* @ngInject */ ($q, OvhTailLogs) => {
+    this.logger = new OvhTailLogs({
+      source: () => $q.when('http://my-log-url'),
+      delay: 2000,
     });
+  });
 ```
 
 ```html
@@ -40,8 +37,6 @@ angular
     </ovh-tail-logs>
 </div>
 ```
-
-
 
 ## Test
 

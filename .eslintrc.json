@@ -2,7 +2,10 @@
   "root": true,
   "extends": "airbnb-base",
   "parser": "babel-eslint",
-  "plugins": ["angular"],
+  "plugins": [
+    "angular",
+    "markdown"
+  ],
   "env": {
     "browser": true,
     "jquery": true
