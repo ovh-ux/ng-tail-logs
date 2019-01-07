@@ -14,6 +14,7 @@
     "dist"
   ],
   "main": "./dist/cjs/index.js",
+  "browser": "./dist/umd/ng-tail-logs.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c --watch",
@@ -26,7 +27,6 @@
     "version": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
   },
-  "browser": "./dist/umd/ng-tail-logs.js",
   "dependencies": {
     "lodash": "^4.17.11"
   },
