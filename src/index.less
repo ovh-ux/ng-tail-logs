@@ -1,6 +1,6 @@
 // stylelint-disable-next-line selector-type-no-unknown
-ovh-tail-logs {
-  .ovh-angular-tail-logs {
+tail-logs {
+  .tail-logs {
     background-color: #122844;
     color: white;
     font-family: monospace;
@@ -16,11 +16,11 @@ ovh-tail-logs {
       vertical-align: top;
       width: 8px;
       height: 17px;
-      animation: ovh-tail-logs-blink 1s step-end infinite;
+      animation: tail-logs-blink 1s step-end infinite;
     }
   }
 
-  @keyframes ovh-tail-logs-blink {
+  @keyframes tail-logs-blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
