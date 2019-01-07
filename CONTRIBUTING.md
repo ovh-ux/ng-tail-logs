@@ -19,7 +19,7 @@ The contributions should be submitted through Github Pull Requests.
 
 # Licensing for new files
 
-ovh-tail-logs is licensed under a BSD-3-Clause license. Anything
+ng-tail-logs is licensed under a BSD-3-Clause license. Anything
 contributed to ng-tail-logs must be released under this license.
 
 When introducing a new file into the project, please make sure it has a
