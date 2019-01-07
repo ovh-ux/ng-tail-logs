@@ -1,10 +1,10 @@
 import angular from 'angular';
 import 'angularjs-scroll-glue';
 
-import ngTailLogsComponent from './ng-tail-logs.component';
-import ngTailLogService from './ng-tail-logs.service';
+import component from './component';
+import service from './service';
 
-import './ng-tail-logs.less';
+import './index.less';
 
 const moduleName = 'ngTailLogs';
 
@@ -12,7 +12,7 @@ angular
   .module(moduleName, [
     'luegg.directives',
   ])
-  .component('ovhTailLogs', ngTailLogsComponent)
-  .service('OvhTailLogs', ngTailLogService);
+  .component('tailLogs', component)
+  .service('TailLogs', service);
 
 export default moduleName;

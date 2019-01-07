@@ -1,6 +1,6 @@
 # ng-tail-logs
 
-> OVH Angular Tail Logs Module
+> AngularJS tail logs module.
 
 [![Downloads](https://badgen.net/npm/dt/@ovh-ux/ng-tail-logs)](https://npmjs.com/package/@ovh-ux/ng-tail-logs) [![Dependencies](https://badgen.net/david/dep/ovh-ux/ng-tail-logs)](https://npmjs.com/package/@ovh-ux/ng-tail-logs?activeTab=dependencies) [![Dev Dependencies](https://badgen.net/david/dev/ovh-ux/ng-tail-logs)](https://npmjs.com/package/@ovh-ux/ng-tail-logs?activeTab=dependencies) [![Gitter](https://badgen.net/badge/gitter/ovh-ux/blue?icon=gitter)](https://gitter.im/ovh/ux)
 
@@ -20,8 +20,8 @@ import '@ovh-ux/ng-tail-logs';
 
 angular
   .module('myApp', ['ngTailLogs'])
-  .controller('myCtrl', /* @ngInject */ ($q, OvhTailLogs) => {
-    this.logger = new OvhTailLogs({
+  .controller('MyCtrl', /* @ngInject */ ($q, TailLogs) => {
+    this.logger = new TailLogs({
       source: () => $q.when('http://my-log-url'),
       delay: 2000,
     });
@@ -29,12 +29,12 @@ angular
 ```
 
 ```html
-<div data-ng-controller="myCtrl as Ctrl">
-    <ovh-tail-logs>
-        <div data-ng-repeat="log in Ctrl.logger.logs track by $index"
+<div data-ng-controller="MyCtrl as $ctrl">
+    <tail-logs>
+        <div data-ng-repeat="log in $ctrl.logger.logs track by $index"
              data-ng-bind="log.message">
         </div>
-    </ovh-tail-logs>
+    </tail-logs>
 </div>
 ```
 

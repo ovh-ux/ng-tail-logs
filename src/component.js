@@ -1,4 +1,4 @@
-import template from './ng-tail-logs.html';
+import template from './template.html';
 
 export default {
   template,
